@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 c92782365f73aa4a22a78cbdbb2785db377e29b1 alexv <alexvminga.a@gmail.com> 1630860907 -0500	clone: from https://gadmunicipalriobamba@bitbucket.org/gadmunicipalriobamba/facturacion-electronica.git
+c92782365f73aa4a22a78cbdbb2785db377e29b1 da01eb942e62a20318da6c1f3ec6fabc5057912f alexv <alexvminga.a@gmail.com> 1630861575 -0500	commit: first commit
+da01eb942e62a20318da6c1f3ec6fabc5057912f 48a997faaf3cd43461588abd9062a470542fb621 alexv <alexvminga.a@gmail.com> 1631076272 -0500	commit: guardar facturas por mes 
+48a997faaf3cd43461588abd9062a470542fb621 1316193957c834512f07b980c7db1aaccf8692cc alexv <alexvminga.a@gmail.com> 1631076847 -0500	commit: correcciones
+1316193957c834512f07b980c7db1aaccf8692cc f6c5ab86be7cae31a2bf6007036170d28fdedd12 alexv <alexvminga.a@gmail.com> 1631076884 -0500	commit: ignore files
+f6c5ab86be7cae31a2bf6007036170d28fdedd12 ab573ff0644944e7b0d4144a4d87003dc21f7478 alexv <alexvminga.a@gmail.com> 1631081591 -0500	commit: correccion anio
+ab573ff0644944e7b0d4144a4d87003dc21f7478 fee860d683954cfe0c5bd5e09d828fd5c7379bda alexv <alexvminga.a@gmail.com> 1631082704 -0500	commit: error al guardar pdf
