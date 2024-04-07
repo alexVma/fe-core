@@ -497,7 +497,7 @@ public class PdfGenerator
         PdfPTable totales = new PdfPTable(2);
         totales.getDefaultCell().setHorizontalAlignment(Element.ALIGN_RIGHT);
         
-        totales.addCell(new Phrase("SUBTOTAL 14%",FontFactory.getFont("arial", 8)));
+        totales.addCell(new Phrase("SUBTOTAL 15%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(baseImponibleIVA12,FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("SUBTOTAL 0%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(baseImponibleIVA0,FontFactory.getFont("arial", 8)));
@@ -512,7 +512,7 @@ public class PdfGenerator
           totales.addCell(new Phrase("0.00",FontFactory.getFont("arial", 8)));  
         totales.addCell(new Phrase("ICE",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(valorICE,FontFactory.getFont("arial", 8)));
-        totales.addCell(new Phrase("IVA 14%",FontFactory.getFont("arial", 8)));
+        totales.addCell(new Phrase("IVA 15%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(valorIVA12,FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("PROPINA",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(factura.getPropina()+"0",FontFactory.getFont("arial", 8)));
@@ -754,7 +754,7 @@ public class PdfGenerator
             {
                 baseImponibleIVA0 = factura.getTotalConImpuestos().getImpuesto().get(i).getBaseImponible();
             }
-            else if((factura.getTotalConImpuestos().getImpuesto().get(i).getCodigo().equals("2")) & (factura.getTotalConImpuestos().getImpuesto().get(i).getCodigoPorcentaje().equals("2")))
+            else if((factura.getTotalConImpuestos().getImpuesto().get(i).getCodigo().equals("2")) & (factura.getTotalConImpuestos().getImpuesto().get(i).getCodigoPorcentaje().equals("4")))
             {
                 baseImponibleIVA12 = factura.getTotalConImpuestos().getImpuesto().get(i).getBaseImponible();
                 valorIVA12 = factura.getTotalConImpuestos().getImpuesto().get(i).getValor();
@@ -797,7 +797,7 @@ public class PdfGenerator
         PdfPTable totales = new PdfPTable(2);
         totales.getDefaultCell().setHorizontalAlignment(Element.ALIGN_RIGHT);
         
-        totales.addCell(new Phrase("SUBTOTAL 12%",FontFactory.getFont("arial", 8)));
+        totales.addCell(new Phrase("SUBTOTAL 15%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(baseImponibleIVA12,FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("SUBTOTAL 0%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(baseImponibleIVA0,FontFactory.getFont("arial", 8)));
@@ -809,7 +809,7 @@ public class PdfGenerator
         totales.addCell(new Phrase(factura.getTotalDescuento(),FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("ICE",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(valorICE,FontFactory.getFont("arial", 8)));
-        totales.addCell(new Phrase("IVA 12%",FontFactory.getFont("arial", 8)));
+        totales.addCell(new Phrase("IVA 15%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(valorIVA12,FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("PROPINA",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(factura.getPropina()+"0",FontFactory.getFont("arial", 8)));
@@ -1164,7 +1164,7 @@ public class PdfGenerator
             {
                 baseImponibleIVA0 = credito.getTotalConImpuestos().getImpuesto().get(i).getBaseImponible();
             }
-            else if((credito.getTotalConImpuestos().getImpuesto().get(i).getCodigo().equals("2")) & (credito.getTotalConImpuestos().getImpuesto().get(i).getCodigoPorcentaje().equals("2")))
+            else if((credito.getTotalConImpuestos().getImpuesto().get(i).getCodigo().equals("2")) & (credito.getTotalConImpuestos().getImpuesto().get(i).getCodigoPorcentaje().equals("4")))
             {
                 baseImponibleIVA12 = credito.getTotalConImpuestos().getImpuesto().get(i).getBaseImponible();
                 valorIVA12 = credito.getTotalConImpuestos().getImpuesto().get(i).getValor();
@@ -1207,7 +1207,7 @@ public class PdfGenerator
         PdfPTable totales = new PdfPTable(2);
         totales.getDefaultCell().setHorizontalAlignment(Element.ALIGN_RIGHT);
         
-        totales.addCell(new Phrase("SUBTOTAL 12%",FontFactory.getFont("arial", 8)));
+        totales.addCell(new Phrase("SUBTOTAL 15%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(baseImponibleIVA12,FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("SUBTOTAL 0%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(baseImponibleIVA0,FontFactory.getFont("arial", 8)));
@@ -1219,7 +1219,7 @@ public class PdfGenerator
         totales.addCell(new Phrase("0.00",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("ICE",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(valorICE,FontFactory.getFont("arial", 8)));
-        totales.addCell(new Phrase("IVA 12%",FontFactory.getFont("arial", 8)));
+        totales.addCell(new Phrase("IVA 15%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(valorIVA12,FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("VALOR TOTAL",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(credito.getValorModificacion(),FontFactory.getFont("arial", 8)));
@@ -1336,7 +1336,7 @@ public class PdfGenerator
             {
                 baseImponibleIVA0 = debito.getDebitoImpuestos().getDebitoImpuesto().get(i).getBaseImponible();
             }
-            else if((debito.getDebitoImpuestos().getDebitoImpuesto().get(i).getCodigo().equals("2")) & (debito.getDebitoImpuestos().getDebitoImpuesto().get(i).getCodigoPorcentaje().equals("2")))
+            else if((debito.getDebitoImpuestos().getDebitoImpuesto().get(i).getCodigo().equals("2")) & (debito.getDebitoImpuestos().getDebitoImpuesto().get(i).getCodigoPorcentaje().equals("4")))
             {
                 baseImponibleIVA12 = debito.getDebitoImpuestos().getDebitoImpuesto().get(i).getBaseImponible();
                 valorIVA12 = debito.getDebitoImpuestos().getDebitoImpuesto().get(i).getValor();
@@ -1379,7 +1379,7 @@ public class PdfGenerator
         PdfPTable totales = new PdfPTable(2);
         totales.getDefaultCell().setHorizontalAlignment(Element.ALIGN_RIGHT);
         
-        totales.addCell(new Phrase("SUBTOTAL 12%",FontFactory.getFont("arial", 8)));
+        totales.addCell(new Phrase("SUBTOTAL 15%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(baseImponibleIVA12,FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("SUBTOTAL 0%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(baseImponibleIVA0,FontFactory.getFont("arial", 8)));
@@ -1389,7 +1389,7 @@ public class PdfGenerator
         totales.addCell(new Phrase(debito.getTotalSinImpuestos(),FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("VALOR ICE",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(valorICE,FontFactory.getFont("arial", 8)));
-        totales.addCell(new Phrase("IVA 12%",FontFactory.getFont("arial", 8)));
+        totales.addCell(new Phrase("IVA 15%",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(valorIVA12,FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase("VALOR TOTAL",FontFactory.getFont("arial", 8)));
         totales.addCell(new Phrase(debito.getValorTotal(),FontFactory.getFont("arial", 8)));

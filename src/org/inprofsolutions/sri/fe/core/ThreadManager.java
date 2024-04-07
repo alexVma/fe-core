@@ -307,7 +307,7 @@ public class ThreadManager
                 }
             }
             catch(Exception e)
-            {
+            {e.printStackTrace();
                 LoggerContainer.getListLogger().get(0).log(Level.INFO,e.toString());if(developer.isDebug()){e.printStackTrace();}
             }
         }
